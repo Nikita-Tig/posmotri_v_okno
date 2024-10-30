@@ -153,6 +153,7 @@ ol {
   padding: 6px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   background-color: transparent;
 }
@@ -172,9 +173,9 @@ ol {
 }
 
 .content__details {
-  display: grid;
-  grid-template-rows: 210px 298px;
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 .title {
@@ -190,6 +191,8 @@ ol {
 
 .content__list {
   position: relative;
+  width: 399px;
+  height: 298px;
   overflow: auto;
 }
 
@@ -226,11 +229,15 @@ ol {
 }
 
 .content__video-card-title {
+  max-width: 192px;
   margin-bottom: 6px;
+  overflow: hidden;
   font-family: "oswald", sans-serif;
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
@@ -241,6 +248,8 @@ ol {
   width: 194px;
   height: 103px;
   margin-left: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
