@@ -51,7 +51,7 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 711px 405px;
+  grid-template-columns: 711px 407px;
   align-items: flex-end;
   gap: 30px;
   width: 1140px;
@@ -266,7 +266,7 @@ ol {
 }
 
 .more-button {
-  width: 388px;
+  width: calc(100% - 2px);
   margin-bottom: 2px;
   margin-left: 2px;
 }
